@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=fallback");
+
+@tailwind base;
+@tailwind components;
+
+.pagination {
+    display: flex;
+    list-style: none;
+    outline: none;
+}
+.pagination > .active > a {
+    background-color: #6366f1;
+
+    color: #fff;
+}
+.pagination > li > a {
+    padding: 5px 5px;
+    outline: none;
+    cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #6366f1;
+    border-radius: 5px;
+    outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+    color: #97999b;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-radius: unset;
+}
+
+@tailwind utilities;

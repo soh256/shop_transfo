@@ -1,0 +1,9 @@
+body {
+    position: relative;
+}
+.Nouveau {
+    position: static;
+    text-align: center;
+    width: 100%;
+    z-index: 3000;
+}
